@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+    <script src="data.js" type="text/javascript"></script>
+    <title>Portrait Chinois BALIT Diyana</title>
+    <link rel="icon" type="image/x-icon" href="img/smile.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+</head>
+
+
+<body>
+
+    <section>
+        <header>
+
+            <nav>
+                <h4 class="def">Jeu de devinette où des analogies sont données comme indices
+                </h4>
+                <h3 class="auteur">par Diyana · BALIT <br> BUT MMI 2022</h3>
+            </nav>
+        </header>
+        <div class="title" id="title">
+            <h1 id="str"></h1>
+        </div>
+
+        <div href="#about" class="button-container">
+            <a href="#about" class="play">
+                Par ici :)
+            </a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="wrapper">
+            <img src="diyana.png">
+            <div class="wrap">
+                <h2>DIYANA BALIT</h2>
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <p>Bonjour ! Je m'appelle Balit Diyana et j'ai 20 ans. Je suis actuellement étudiante de première
+                        année dans BUT Métiers du multimédia et de l'Internet, apprenant à mener à bien tous les aspects
+                        des projets multimédias, y compris la conception, le développement et l'audiovisuel.
+
+                        <br><br> Aspirant et passionnée d'art depuis l'enfance, je sais puiser dans ma créativité et
+                        élargir mon
+                        univers visuel avec la musique, le dessin, l'infographie, l'audiovisuel et le design.
+                        Découvrez différentes facettes de ma personnalité à travers ce portrait chinois réalisé dans le
+                        cadre d'un projet étudiant.</br></br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="liste"></div>
+
+    <section class="formulaire">
+
+        <form>
+            <h1>À vous de jouer ;p</h1>
+            <label for="analogie">Mail</label>
+            <input type="mail" name="mail" id="mail" placeholder="Votre mail ">
+            <br>
+            <label for="analogie">Si j'étais</label>
+            <input type="text" name="analogie" id="analogie" placeholder="une plante">
+            <br>
+            <label for="valeur">Je serais</label>
+            <input type="text" name="valeur" id="valeur" placeholder="un cactus">
+            <br>
+            <label for="justify">
+                Explique moi :) Pourquoi ?
+            </label>
+            <textarea placeholder="500 caractères max." id="justify" name="justify" maxlength="500"></textarea>
+
+            <input type="submit" name="submit" id="submit" value="Envoyer">
+        </form>
+        <p id="message"></p>
+    </section>
+    <div id="new-analogie"></div>
+    <footer id="footer">
+        <a class="button" href="#popup1">Crédits</a>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Crédits</h2>
+                <a class="close" href="#footer">&times;</a>
+                <div class="content">
+                    <h3>Un portrait chinois écrit et développé par :</h3>
+                    <h3>Diyana Balit</h3>
+                    <br>
+                    <div class="credits-container">
+                        <div class="credits1">
+                            <h4>Polices</h4>
+                            <a class="link"href="https://www.fontmirror.com/hanson" target="_blank">Hanson</a>
+                            <br>
+                            <a  class="link" href="https://fonts.google.com/specimen/DM+Sans" target="_blank">DM Sans</a>
+                        </div>
+
+                        <div class="credits2"> <h4>Illustrations</h4>
+                            <a  class="link" href="https://www.linkedin.com/in/diyana-balit-3673a4232/" target="_blank">BALIT Diyana</a> 
+                        </div> 
+                        
+                    </div>
+                </div>
+
+                <p class="text-credit"><br>Hébergeur : Université Gustave Eiffel - 2 rue Albert Einstein, 77420
+                    Champs-sur-Marne, France -
+                    01 60 95 75 00 - webmaster@univ-eiffel.fr</p><br>
+
+                <p class="text-regle">Réglement à l'article 15 du Règlement général sur la protection des
+                    données (RGPD) du 27 avril 2016, vous disposez d'un droit d'accès aux informations vous
+                    concernant. Si vous trouvez
+                    que ces informations sont incorrectes, l'article 16 du RGPD vous permet de les modifier ou de
+                    les supprimer. Dans ce cas, merci de contacter le directeur de la communication :
+                    com@univ-eiffel.fr.</p>
+                <b></b>
+                <p class="text-regle"> Le formulaire permettant la création d’une analogie personnalisée recueil
+                    votre adresse de
+                    courriel et votre adresse IP. Pour toute question portant sur la collecte ou le traitement de
+                    vos données à caractère personnel par l’UPEM, vous pouvez saisir la personne responsable du
+                    traitement des données qui est : Philippe Gambette (philippe.gambette@univ-eiffel.fr) Les
+                    fichiers détenus par l'UPEM qui comportent des données à caractère personnel ne seront jamais
+                    transmis à des tiers et ne feront jamais l'objet d'une commercialisation.</p>
+                <b></b>
+                <p class="text-credit">©2023 Tous droits réservés par Diyana BALIT.</p>
+            </div>
+
+        </div>
+        </div>
+
+        <div href="#title" class="button-container">
+            <a href="#title" class="play">
+                Pour monter :p
+            </a>
+        </div>
+    </footer>
+
+</body>
+<script> AOS.init();</script>
+
+</html>
